@@ -289,6 +289,25 @@
         </div>
     </footer>
 
+    <!-- Mobile Responsive Styles -->
+    <style>
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem !important; }
+            .hero p { font-size: 1rem !important; }
+            section .container > div[style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+            }
+            div[style*="position: sticky"] {
+                position: relative !important;
+                top: 0 !important;
+            }
+            div[style*="grid-template-columns: repeat(2"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
