@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://jupenta.com/sitemap.xml
+Host: https://jupenta.com
