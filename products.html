@@ -63,238 +63,257 @@
         </div>
     </section>
 
-    <!-- Filter Categories -->
-    <section class="section" style="background: white; padding-top: 3rem;">
-        <div class="container">
-            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem;" data-aos="fade-up">
-                <button class="filter-btn btn btn-primary" data-filter="all">All Products</button>
-                <button class="filter-btn btn btn-outline" data-filter="education">Education</button>
-                <button class="filter-btn btn btn-outline" data-filter="healthcare">Healthcare</button>
-                <button class="filter-btn btn btn-outline" data-filter="retail">Retail</button>
-                <button class="filter-btn btn btn-outline" data-filter="smart-city">Smart City</button>
-                <button class="filter-btn btn btn-outline" data-filter="agriculture">Agriculture</button>
+    <!-- Products Section -->
+    <section id="products" class="section" style="background: white; position: relative;">
+        <!-- Decorative Background -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 300px; background: linear-gradient(135deg, rgba(14, 165, 233, 0.03) 0%, rgba(124, 58, 237, 0.03) 100%); border-radius: 0 0 50% 50% / 0 0 20px 20px; z-index: 0;"></div>
+        
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 class="section-title" data-aos="fade-up">Our <span class="gradient-text">Projects</span></h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Real solutions deployed and serving customers worldwide
+            </p>
+            
+            <!-- Released Projects -->
+            <div style="margin-top: 3rem; margin-bottom: 2rem;">
+                <h3 style="font-size: 2rem; font-weight: 700; margin-bottom: 2rem; text-align: center; color: var(--primary-600);" data-aos="fade-up">
+                    <i class="fas fa-rocket" style="margin-right: 0.5rem;"></i>Released Projects
+                </h3>
             </div>
-
-            <!-- Products Grid -->
-            <div class="grid grid-3" id="products-grid">
-                <!-- BusMate -->
-                <div class="product-item" data-category="education" data-aos="fade-up">
-                    <div class="glass-card" style="height: 100%;">
-                        <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-bus" style="font-size: 4rem; color: white;"></i>
+            
+            <div class="grid grid-3">
+                <!-- BusMate App -->
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card" style="height: 100%; padding: 0; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(59, 130, 246, 0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='';">
+                        <!-- Header with Logo -->
+                        <div style="background: linear-gradient(135deg, #3b82f6, #2563eb); padding: 2.5rem; position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 10px; right: 10px;">
+                                <span style="background: rgba(255, 255, 255, 0.25); backdrop-filter: blur(10px); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.75rem; color: white; font-weight: 600;">
+                                    <i class="fas fa-check-circle"></i> LIVE
+                                </span>
+                            </div>
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                                <img src="assets/images/BUSMATE.FRONT.png" alt="BusMate" style="width: 90px; height: 90px; object-fit: contain; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));">
+                            </div>
                         </div>
-                        <h3 class="card-title">BusMate</h3>
-                        <p class="card-text mb-3">
-                            AI-powered school bus tracking with real-time ETAs, smart notifications, and voice alerts for safer student commutes.
-                        </p>
-                        <div style="margin-bottom: 1.5rem;">
-                            <span class="tag">Education</span>
-                            <span class="tag">IoT</span>
-                            <span class="tag">AI/ML</span>
+                        
+                        <!-- Content -->
+                        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+                            <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--dark);">BusMate</h3>
+                            <p style="font-size: 0.95rem; color: var(--gray-600); line-height: 1.6; margin-bottom: 1.25rem;">
+                                School bus tracking app with real-time GPS, voice alerts, and smart ETA predictions for safer student commutes.
+                            </p>
+                            
+                            <!-- Tags -->
+                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+                                <span style="padding: 0.35rem 0.85rem; background: rgba(59, 130, 246, 0.1); color: #2563eb; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Education</span>
+                                <span style="padding: 0.35rem 0.85rem; background: rgba(59, 130, 246, 0.1); color: #2563eb; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">IoT</span>
+                                <span style="padding: 0.35rem 0.85rem; background: rgba(59, 130, 246, 0.1); color: #2563eb; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Mobile App</span>
+                            </div>
+                            
+                            <!-- Link -->
+                            <a href="https://play.google.com/store/apps/details?id=com.jupenta.busmate" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem; background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; text-decoration: none; border-radius: 10px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; margin-top: auto;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                <i class="fab fa-google-play"></i> Get on Play Store
+                            </a>
                         </div>
-                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
-                            <li style="margin-bottom: 0.5rem;">✓ Real-time GPS tracking</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Traffic-aware ETA predictions</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Voice & SMS alerts</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Parent mobile app</li>
-                        </ul>
                     </div>
                 </div>
 
-                <!-- ClassSync -->
-                <div class="product-item" data-category="education" data-aos="fade-up" data-aos-delay="100">
-                    <div class="glass-card" style="height: 100%;">
-                        <div style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-chalkboard-teacher" style="font-size: 4rem; color: white;"></i>
+                <!-- BusMate Management -->
+                <div data-aos="fade-up" data-aos-delay="150">
+                    <div class="glass-card" style="height: 100%; padding: 0; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(14, 165, 233, 0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='';">
+                        <!-- Header with Icon -->
+                        <div style="background: linear-gradient(135deg, #0ea5e9, #0284c7); padding: 2.5rem; position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 10px; right: 10px;">
+                                <span style="background: rgba(255, 255, 255, 0.25); backdrop-filter: blur(10px); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.75rem; color: white; font-weight: 600;">
+                                    <i class="fas fa-check-circle"></i> LIVE
+                                </span>
+                            </div>
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-tasks" style="font-size: 4rem; color: white; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));"></i>
+                            </div>
                         </div>
-                        <h3 class="card-title">ClassSync</h3>
-                        <p class="card-text mb-3">
-                            Smart classroom management with AI attendance, grade tracking, and seamless parent-teacher communication.
-                        </p>
-                        <div style="margin-bottom: 1.5rem;">
-                            <span class="tag">Education</span>
-                            <span class="tag">AI/ML</span>
-                            <span class="tag">Cloud</span>
+                        
+                        <!-- Content -->
+                        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+                            <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--dark);">BusMate Management</h3>
+                            <p style="font-size: 0.95rem; color: var(--gray-600); line-height: 1.6; margin-bottom: 1.25rem;">
+                                Comprehensive school bus management platform for tracking operations, managing routes, monitoring drivers, and admin control panel.
+                            </p>
+                            
+                            <!-- Tags -->
+                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+                                <span style="padding: 0.35rem 0.85rem; background: rgba(14, 165, 233, 0.1); color: #0284c7; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Education</span>
+                                <span style="padding: 0.35rem 0.85rem; background: rgba(14, 165, 233, 0.1); color: #0284c7; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Management</span>
+                                <span style="padding: 0.35rem 0.85rem; background: rgba(14, 165, 233, 0.1); color: #0284c7; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Dashboard</span>
+                            </div>
+                            
+                            <!-- Link -->
+                            <a href="https://busmate.jupenta.com" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem; background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white; text-decoration: none; border-radius: 10px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; margin-top: auto;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                <i class="fas fa-external-link-alt"></i> Visit Platform
+                            </a>
                         </div>
-                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
-                            <li style="margin-bottom: 0.5rem;">✓ Automated attendance</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Grade management</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Parent portal</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Assignment tracking</li>
-                        </ul>
                     </div>
                 </div>
 
                 <!-- CampusGuard -->
-                <div class="product-item" data-category="education smart-city" data-aos="fade-up" data-aos-delay="200">
-                    <div class="glass-card" style="height: 100%;">
-                        <div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-shield-alt" style="font-size: 4rem; color: white;"></i>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-card" style="height: 100%; padding: 0; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(16, 185, 129, 0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='';">
+                        <!-- Header with Logo -->
+                        <div style="background: linear-gradient(135deg, #10b981, #059669); padding: 2.5rem; position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 10px; right: 10px;">
+                                <span style="background: rgba(255, 255, 255, 0.25); backdrop-filter: blur(10px); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.75rem; color: white; font-weight: 600;">
+                                    <i class="fas fa-check-circle"></i> LIVE
+                                </span>
+                            </div>
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                                <img src="assets/images/pinnaclelogo.jpeg" alt="Pinnacle Turf" style="width: 90px; height: 90px; object-fit: contain; border-radius: 50%; border: 3px solid rgba(255,255,255,0.3); filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));">
+                            </div>
                         </div>
-                        <h3 class="card-title">CampusGuard</h3>
-                        <p class="card-text mb-3">
-                            AI-powered campus security with smart surveillance, visitor management, and emergency alert systems.
-                        </p>
-                        <div style="margin-bottom: 1.5rem;">
-                            <span class="tag">Security</span>
-                            <span class="tag">AI Vision</span>
-                            <span class="tag">IoT</span>
+                        
+                        <!-- Content -->
+                        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+                            <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--dark);">Pinnacle Turf</h3>
+                            <p style="font-size: 0.95rem; color: var(--gray-600); line-height: 1.6; margin-bottom: 1.25rem;">
+                                Sports turf booking app with slot management, secure payments, and instant confirmations for cricket enthusiasts.
+                            </p>
+                            
+                            <!-- Tags -->
+                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+                                <span style="padding: 0.35rem 0.85rem; background: rgba(16, 185, 129, 0.1); color: #059669; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Sports</span>
+                                <span style="padding: 0.35rem 0.85rem; background: rgba(16, 185, 129, 0.1); color: #059669; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Booking</span>
+                                <span style="padding: 0.35rem 0.85rem; background: rgba(16, 185, 129, 0.1); color: #059669; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Mobile App</span>
+                            </div>
+                            
+                            <!-- Link -->
+                            <a href="https://play.google.com/store/apps/details?id=com.pinnacle.turf" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem; background: linear-gradient(135deg, #10b981, #059669); color: white; text-decoration: none; border-radius: 10px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; margin-top: auto;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                <i class="fab fa-google-play"></i> Get on Play Store
+                            </a>
                         </div>
-                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
-                            <li style="margin-bottom: 0.5rem;">✓ Smart CCTV monitoring</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Visitor management</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Emergency alerts</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Access control</li>
-                        </ul>
                     </div>
+                </div>
+
+                <!-- Karuna Crackers -->
+                <div data-aos="fade-up" data-aos-delay="250">
+                    <div class="glass-card" style="height: 100%; padding: 0; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(245, 158, 11, 0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='';">
+                        <!-- Header with Logo -->
+                        <div style="background: linear-gradient(135deg, #f59e0b, #d97706); padding: 2.5rem; position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 10px; right: 10px;">
+                                <span style="background: rgba(255, 255, 255, 0.25); backdrop-filter: blur(10px); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.75rem; color: white; font-weight: 600;">
+                                    <i class="fas fa-check-circle"></i> LIVE
+                                </span>
+                            </div>
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                                <img src="assets/images/Karuna Crackers Logo.png" alt="Karuna Crackers" style="width: 95px; height: 95px; object-fit: contain; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));">
+                            </div>
+                        </div>
+                        
+                        <!-- Content -->
+                        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+                            <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--dark);">Karuna Crackers</h3>
+                            <p style="font-size: 0.95rem; color: var(--gray-600); line-height: 1.6; margin-bottom: 1.25rem;">
+                                Festive e-commerce platform with product catalog, online ordering, and seamless shopping for festival celebrations.
+                            </p>
+                            
+                            <!-- Tags -->
+                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+                                <span style="padding: 0.35rem 0.85rem; background: rgba(245, 158, 11, 0.1); color: #d97706; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">E-commerce</span>
+                                <span style="padding: 0.35rem 0.85rem; background: rgba(245, 158, 11, 0.1); color: #d97706; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Retail</span>
+                                <span style="padding: 0.35rem 0.85rem; background: rgba(245, 158, 11, 0.1); color: #d97706; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Website</span>
+                            </div>
+                            
+                            <!-- Link -->
+                            <a href="#" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem; background: linear-gradient(135deg, #f59e0b, #d97706); color: white; text-decoration: none; border-radius: 10px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; margin-top: auto;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                <i class="fas fa-external-link-alt"></i> Visit Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DiaPrime -->
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div class="glass-card" style="height: 100%; padding: 0; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(239, 68, 68, 0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='';">
+                        <!-- Header with Logo -->
+                        <div style="background: linear-gradient(135deg, #ef4444, #dc2626); padding: 2.5rem; position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 10px; right: 10px;">
+                                <span style="background: rgba(255, 255, 255, 0.25); backdrop-filter: blur(10px); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.75rem; color: white; font-weight: 600;">
+                                    <i class="fas fa-check-circle"></i> LIVE
+                                </span>
+                            </div>
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                                <img src="assets/images/DiaPrime Logo.png" alt="DiaPrime" style="width: 90px; height: 90px; object-fit: contain; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));">
+                            </div>
+                        </div>
+                        
+                        <!-- Content -->
+                        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+                            <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--dark);">DiaPrime</h3>
+                            <p style="font-size: 0.95rem; color: var(--gray-600); line-height: 1.6; margin-bottom: 1.25rem;">
+                                Healthcare management portal with patient accounts, medical records, and secure health information access.
+                            </p>
+                            
+                            <!-- Tags -->
+                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+                                <span style="padding: 0.35rem 0.85rem; background: rgba(239, 68, 68, 0.1); color: #dc2626; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Healthcare</span>
+                                <span style="padding: 0.35rem 0.85rem; background: rgba(239, 68, 68, 0.1); color: #dc2626; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Cloud</span>
+                                <span style="padding: 0.35rem 0.85rem; background: rgba(239, 68, 68, 0.1); color: #dc2626; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Web Portal</span>
+                            </div>
+                            
+                            <!-- Link -->
+                            <a href="https://diaprime.netlify.app" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem; background: linear-gradient(135deg, #ef4444, #dc2626); color: white; text-decoration: none; border-radius: 10px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; margin-top: auto;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                                <i class="fas fa-external-link-alt"></i> Visit Portal
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Projects -->
+            <div style="margin-top: 5rem; margin-bottom: 2rem;">
+                <h3 style="font-size: 2rem; font-weight: 700; margin-bottom: 2rem; text-align: center; color: var(--gray-600);" data-aos="fade-up">
+                    <i class="fas fa-clock" style="margin-right: 0.5rem;"></i>Upcoming Projects
+                </h3>
+            </div>
+            
+            <div class="grid grid-4">
+                <!-- ClassSync -->
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="100" style="padding: 2rem; text-align: center;">
+                    <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #8b5cf6, #7c3aed); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                        <i class="fas fa-chalkboard-teacher" style="color: white; font-size: 2rem;"></i>
+                    </div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem; font-size: 1.2rem;">ClassSync</h3>
+                    <p style="color: var(--gray-600); font-size: 0.9rem; margin-bottom: 1rem;">Smart classroom management platform</p>
+                    <span style="display: inline-block; padding: 0.25rem 0.75rem; background: var(--gray-200); color: var(--gray-600); border-radius: 20px; font-size: 0.75rem;"><i class="fas fa-code"></i> In Development</span>
+                </div>
+
+                <!-- CampusGuard -->
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="150" style="padding: 2rem; text-align: center;">
+                    <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #10b981, #059669); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                        <i class="fas fa-shield-alt" style="color: white; font-size: 2rem;"></i>
+                    </div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem; font-size: 1.2rem;">CampusGuard</h3>
+                    <p style="color: var(--gray-600); font-size: 0.9rem; margin-bottom: 1rem;">Intelligent campus security system</p>
+                    <span style="display: inline-block; padding: 0.25rem 0.75rem; background: var(--gray-200); color: var(--gray-600); border-radius: 20px; font-size: 0.75rem;"><i class="fas fa-code"></i> In Development</span>
                 </div>
 
                 <!-- RetailEdge -->
-                <div class="product-item" data-category="retail" data-aos="fade-up">
-                    <div class="glass-card" style="height: 100%;">
-                        <div style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-box" style="font-size: 4rem; color: white;"></i>
-                        </div>
-                        <h3 class="card-title">RetailEdge</h3>
-                        <p class="card-text mb-3">
-                            Smart inventory management with predictive analytics and automated supply chain optimization.
-                        </p>
-                        <div style="margin-bottom: 1.5rem;">
-                            <span class="tag">Retail</span>
-                            <span class="tag">Analytics</span>
-                            <span class="tag">AI/ML</span>
-                        </div>
-                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
-                            <li style="margin-bottom: 0.5rem;">✓ Predictive stock management</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Multi-location tracking</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Supplier management</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Sales analytics</li>
-                        </ul>
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="200" style="padding: 2rem; text-align: center;">
+                    <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #f59e0b, #d97706); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                        <i class="fas fa-box" style="color: white; font-size: 2rem;"></i>
                     </div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem; font-size: 1.2rem;">RetailEdge</h3>
+                    <p style="color: var(--gray-600); font-size: 0.9rem; margin-bottom: 1rem;">Smart inventory management system</p>
+                    <span style="display: inline-block; padding: 0.25rem 0.75rem; background: var(--gray-200); color: var(--gray-600); border-radius: 20px; font-size: 0.75rem;"><i class="fas fa-code"></i> In Development</span>
                 </div>
 
                 <!-- HealthHub -->
-                <div class="product-item" data-category="healthcare" data-aos="fade-up" data-aos-delay="100">
-                    <div class="glass-card" style="height: 100%;">
-                        <div style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-hospital" style="font-size: 4rem; color: white;"></i>
-                        </div>
-                        <h3 class="card-title">HealthHub</h3>
-                        <p class="card-text mb-3">
-                            Comprehensive telemedicine platform connecting patients with doctors through secure video consultations.
-                        </p>
-                        <div style="margin-bottom: 1.5rem;">
-                            <span class="tag">Healthcare</span>
-                            <span class="tag">Cloud</span>
-                            <span class="tag">Video</span>
-                        </div>
-                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
-                            <li style="margin-bottom: 0.5rem;">✓ Video consultations</li>
-                            <li style="margin-bottom: 0.5rem;">✓ E-prescription generation</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Appointment scheduling</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Medical records</li>
-                        </ul>
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="250" style="padding: 2rem; text-align: center;">
+                    <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #ef4444, #dc2626); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                        <i class="fas fa-hospital" style="color: white; font-size: 2rem;"></i>
                     </div>
-                </div>
-
-                <!-- ParkEase -->
-                <div class="product-item" data-category="smart-city" data-aos="fade-up" data-aos-delay="200">
-                    <div class="glass-card" style="height: 100%;">
-                        <div style="background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-parking" style="font-size: 4rem; color: white;"></i>
-                        </div>
-                        <h3 class="card-title">ParkEase</h3>
-                        <p class="card-text mb-3">
-                            Smart parking solution with real-time availability tracking, mobile booking, and automated payments.
-                        </p>
-                        <div style="margin-bottom: 1.5rem;">
-                            <span class="tag">Smart City</span>
-                            <span class="tag">IoT</span>
-                            <span class="tag">Mobile</span>
-                        </div>
-                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
-                            <li style="margin-bottom: 0.5rem;">✓ Real-time slot tracking</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Mobile slot booking</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Automatic payments</li>
-                            <li style="margin-bottom: 0.5rem;">✓ License plate recognition</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Learn More →</a>
-                    </div>
-                </div>
-
-                <!-- FarmIQ -->
-                <div class="product-item" data-category="agriculture" data-aos="fade-up">
-                    <div class="glass-card" style="height: 100%;">
-                        <div style="background: linear-gradient(135deg, #84cc16 0%, #65a30d 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-tractor" style="font-size: 4rem; color: white;"></i>
-                        </div>
-                        <h3 class="card-title">FarmIQ</h3>
-                        <p class="card-text mb-3">
-                            Smart agriculture solution with IoT sensors for soil monitoring, weather forecasting, and crop optimization.
-                        </p>
-                        <div style="margin-bottom: 1.5rem;">
-                            <span class="tag">Agriculture</span>
-                            <span class="tag">IoT</span>
-                            <span class="tag">Analytics</span>
-                        </div>
-                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
-                            <li style="margin-bottom: 0.5rem;">✓ Soil moisture sensors</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Weather forecasting</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Crop health monitoring</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Automated irrigation</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Learn More →</a>
-                    </div>
-                </div>
-
-                <!-- QuickServe -->
-                <div class="product-item" data-category="retail" data-aos="fade-up" data-aos-delay="100">
-                    <div class="glass-card" style="height: 100%;">
-                        <div style="background: linear-gradient(135deg, #ec4899 0%, #be185d 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-utensils" style="font-size: 4rem; color: white;"></i>
-                        </div>
-                        <h3 class="card-title">QuickServe</h3>
-                        <p class="card-text mb-3">
-                            Complete restaurant management system with digital menu, order tracking, and kitchen display integration.
-                        </p>
-                        <div style="margin-bottom: 1.5rem;">
-                            <span class="tag">Restaurant</span>
-                            <span class="tag">Cloud</span>
-                            <span class="tag">Mobile</span>
-                        </div>
-                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
-                            <li style="margin-bottom: 0.5rem;">✓ Digital menu with QR</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Order management</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Kitchen display system</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Inventory tracking</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Learn More →</a>
-                    </div>
-                </div>
-
-                <!-- EcoMonitor -->
-                <div class="product-item" data-category="smart-city" data-aos="fade-up" data-aos-delay="200">
-                    <div class="glass-card" style="height: 100%;">
-                        <div style="background: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-globe-americas" style="font-size: 4rem; color: white;"></i>
-                        </div>
-                        <h3 class="card-title">EcoMonitor</h3>
-                        <p class="card-text mb-3">
-                            Environmental monitoring system tracking air and water quality with IoT sensors and public dashboards.
-                        </p>
-                        <div style="margin-bottom: 1.5rem;">
-                            <span class="tag">Environment</span>
-                            <span class="tag">IoT</span>
-                            <span class="tag">Analytics</span>
-                        </div>
-                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
-                            <li style="margin-bottom: 0.5rem;">✓ IoT sensor network</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Pollution tracking</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Historical analysis</li>
-                            <li style="margin-bottom: 0.5rem;">✓ Public dashboard</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Learn More →</a>
-                    </div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem; font-size: 1.2rem;">HealthHub</h3>
+                    <p style="color: var(--gray-600); font-size: 0.9rem; margin-bottom: 1rem;">Telemedicine consultation platform</p>
+                    <span style="display: inline-block; padding: 0.25rem 0.75rem; background: var(--gray-200); color: var(--gray-600); border-radius: 20px; font-size: 0.75rem;"><i class="fas fa-code"></i> In Development</span>
                 </div>
             </div>
         </div>
@@ -397,52 +416,7 @@
             once: true,
             offset: 100
         });
-
-        // Product filtering
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const productItems = document.querySelectorAll('.product-item');
-
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const filter = btn.getAttribute('data-filter');
-                
-                // Update active button
-                filterBtns.forEach(b => {
-                    b.classList.remove('btn-primary');
-                    b.classList.add('btn-outline');
-                });
-                btn.classList.remove('btn-outline');
-                btn.classList.add('btn-primary');
-                
-                // Filter products
-                productItems.forEach(item => {
-                    if (filter === 'all') {
-                        item.style.display = 'block';
-                    } else {
-                        const categories = item.getAttribute('data-category');
-                        if (categories.includes(filter)) {
-                            item.style.display = 'block';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    }
-                });
-            });
-        });
     </script>
     <script src="assets/js/main.js"></script>
-    
-    <style>
-        .tag {
-            display: inline-block;
-            padding: 0.25rem 0.75rem;
-            background: var(--primary-100);
-            color: var(--primary-600);
-            border-radius: 20px;
-            font-size: 0.875rem;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-    </style>
 </body>
 </html>
