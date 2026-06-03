@@ -52,85 +52,14 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Form validation
-function validateContactForm(form) {
-    const name = form.querySelector('#name');
-    const email = form.querySelector('#email');
-    const message = form.querySelector('#message');
-    
-    let isValid = true;
-    
-    if (!name.value.trim()) {
-        showError(name, 'Name is required');
-        isValid = false;
-    } else {
-        removeError(name);
-    }
-    
-    if (!email.value.trim()) {
-        showError(email, 'Email is required');
-        isValid = false;
-    } else if (!isValidEmail(email.value)) {
-        showError(email, 'Please enter a valid email');
-        isValid = false;
-    } else {
-        removeError(email);
-    }
-    
-    if (!message.value.trim()) {
-        showError(message, 'Message is required');
-        isValid = false;
-    } else {
-        removeError(message);
-    }
-    
-    return isValid;
-}
-
-function showError(input, message) {
-    const formGroup = input.parentElement;
-    const error = formGroup.querySelector('.error-message') || document.createElement('span');
-    error.className = 'error-message';
-    error.style.color = 'var(--danger)';
-    error.style.fontSize = '0.875rem';
-    error.style.marginTop = '0.25rem';
-    error.textContent = message;
-    
-    if (!formGroup.querySelector('.error-message')) {
-        formGroup.appendChild(error);
-    }
-    
-    input.style.borderColor = 'var(--danger)';
-}
-
-function removeError(input) {
-    const formGroup = input.parentElement;
-    const error = formGroup.querySelector('.error-message');
-    if (error) {
-        error.remove();
-    }
-    input.style.borderColor = '';
-}
-
-function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-// Handle contact form submission
-const contactForm = document.querySelector('#contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        if (validateContactForm(contactForm)) {
-            // In a real application, you would send the data to a server
-            showSuccessMessage('Thank you! Your message has been sent successfully.');
-            contactForm.reset();
-        }
+// Mobile Navigation Toggle
+const mobileToggle = document.querySelector('.mobile-menu-toggle');
+if (mobileToggle) {
+    mobileToggle.addEventListener('click', () => {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
     });
 }
-
 function showSuccessMessage(message) {
     const successDiv = document.createElement('div');
     successDiv.className = 'success-message';

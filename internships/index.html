@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Technology Internships | Jupenta Technologies</title>
+  <meta name="description" content="Single-page internships at Jupenta Technologies — project-based training, mentorship, and certificates across Data Science, AI, Web, IoT, and more.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jupenta.com/internships">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Technology Internships | Jupenta Technologies">
+  <meta property="og:description" content="Project-based internships for engineering students: Data Science, AI, Web, IoT, and more. Apply via WhatsApp or Email.">
+  <meta property="og:url" content="https://jupenta.com/internships">
+  <meta property="og:image" content="https://jupenta.com/assets/images/FINAL,JUPENTA,LOGO.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Technology Internships | Jupenta Technologies">
+  <meta name="twitter:description" content="Project-based internships for engineering students: Data Science, AI, Web, IoT, and more. Apply via WhatsApp or Email.">
+  <meta name="twitter:image" content="https://jupenta.com/assets/images/FINAL,JUPENTA,LOGO.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <!-- Structured data: Organization, EducationalOrganization, Website, Breadcrumb, FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Jupenta Technologies",
+        "url": "https://jupenta.com",
+        "logo": "https://jupenta.com/assets/images/FINAL,JUPENTA,LOGO.png",
+        "contactPoint": [{"@type": "ContactPoint","telephone": "+91 73973 98610","contactType": "customer support","areaServed": "IN"}]
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "Jupenta Technologies",
+        "url": "https://jupenta.com/internships",
+        "logo": "https://jupenta.com/assets/images/FINAL,JUPENTA,LOGO.png",
+        "address": {"@type": "PostalAddress","addressLocality": "Coimbatore","addressRegion": "Tamil Nadu","addressCountry": "IN"}
+      },
+      {
+        "@type": "WebSite",
+        "url": "https://jupenta.com",
+        "potentialAction": {"@type": "SearchAction","target": "https://jupenta.com/?s={search_term_string}","query-input": "required name=search_term_string"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem","position": 1, "name": "Home", "item": "https://jupenta.com/"},
+          {"@type": "ListItem","position": 2, "name": "Internships", "item": "https://jupenta.com/internships"}
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- FAQ structured data is added near the FAQ section for clarity -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f9fafb;
+      font-family: 'Inter', sans-serif;
+      color: #111827;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2rem 2rem 3rem;
+    }
+
+    /* Typography */
+    h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: #0a2540;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: #1f2937;
+      margin-bottom: 1rem;
+      border-left: 4px solid #2c7da0;
+      padding-left: 1rem;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+
+    .section-subtitle {
+      color: #4b5563;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: #ffffff;
+      border-radius: 1.5rem;
+      padding: 2.5rem 2.8rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.03);
+      border: 1px solid #eef2f6;
+    }
+
+    .hero-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .hero-content {
+      flex: 2;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      color: #4b5563;
+      max-width: 90%;
+      margin: 1rem 0 1.8rem;
+    }
+
+    .hero-logo img {
+      width: 200px;
+      border-radius: 16px;
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.05));
+    }
+
+    /* Buttons */
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1.8rem;
+      border-radius: 40px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      font-size: 0.95rem;
+    }
+
+    .btn-primary {
+      background-color: #1e6f5c;
+      color: white;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #0f5344;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(30, 111, 92, 0.2);
+    }
+
+    .btn-secondary {
+      background-color: #f3f4f6;
+      color: #1f2937;
+      border: 1px solid #e5e7eb;
+    }
+
+    .btn-secondary:hover {
+      background-color: #e5e7eb;
+      transform: translateY(-1px);
+    }
+
+    /* Stats */
+    .stats-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      background: #ffffff;
+      border-radius: 1.25rem;
+      padding: 1.8rem 2rem;
+      margin-bottom: 2.5rem;
+      border: 1px solid #eef2f6;
+    }
+
+    .stat-item {
+      text-align: center;
+      flex: 1;
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #1e6f5c;
+      display: block;
+      line-height: 1.2;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: #6b7280;
+      letter-spacing: 0.3px;
+      font-weight: 500;
+    }
+
+    /* Domains Grid */
+    .domains-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0 2.5rem;
+    }
+
+    .domain-card {
+      background: #ffffff;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      transition: all 0.25s;
+      border: 1px solid #eef2f6;
+      cursor: pointer;
+    }
+
+    .domain-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.08);
+      border-color: #cbd5e1;
+    }
+
+    .domain-header {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .domain-icon {
+      background: #eef2ff;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1rem;
+      color: #1e6f5c;
+      font-family: monospace;
+    }
+
+    .domain-title {
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .domain-desc {
+      font-size: 0.85rem;
+      color: #6b7280;
+      margin-bottom: 0.8rem;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .skill-tag {
+      background: #f3f4f6;
+      padding: 0.2rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: #374151;
+    }
+
+    /* Why Jupenta Cards */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .feature-card {
+      background: #ffffff;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      border: 1px solid #eef2f6;
+    }
+
+    .feature-title {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #0a2540;
+    }
+
+    .feature-text {
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+
+    /* Timeline */
+    .timeline-section {
+      background: #ffffff;
+      border-radius: 1.25rem;
+      padding: 2rem;
+      margin: 2rem 0;
+      border: 1px solid #eef2f6;
+    }
+
+    .timeline-steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.8rem;
+      margin-top: 1.2rem;
+    }
+
+    .step {
+      background: #f9fafb;
+      border-radius: 3rem;
+      padding: 0.5rem 1.2rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.9rem;
+    }
+
+    .step-number {
+      background: #1e6f5c;
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    /* Accordion */
+    .accordion {
+      margin: 2rem 0;
+    }
+
+    .accordion-item {
+      background: #ffffff;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #eef2f6;
+      overflow: hidden;
+    }
+
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      font-weight: 600;
+      background: #ffffff;
+      transition: background 0.2s;
+    }
+
+    .accordion-header:hover {
+      background: #fafcfc;
+    }
+
+    .accordion-arrow {
+      font-size: 1.2rem;
+      transition: transform 0.2s;
+      color: #6c757d;
+    }
+
+    .accordion-item.active .accordion-arrow {
+      transform: rotate(180deg);
+    }
+
+    .accordion-body {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 1.5rem;
+      transition: max-height 0.3s ease;
+    }
+
+    .accordion-item.active .accordion-body {
+      max-height: 250px;
+      padding: 0 1.5rem 1.2rem 1.5rem;
+    }
+
+    .accordion-body p {
+      margin-bottom: 0.6rem;
+      font-size: 0.9rem;
+    }
+
+    /* FAQ Grid */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      border-radius: 0.875rem;
+      padding: 1.2rem;
+      border: 1px solid #eef2f6;
+    }
+
+    .faq-question {
+      font-weight: 700;
+      color: #1f2937;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    .faq-answer {
+      color: #6b7280;
+      font-size: 0.85rem;
+    }
+
+    /* Final CTA */
+    .final-cta {
+      background: #0f2f2a;
+      color: white;
+      border-radius: 1.5rem;
+      padding: 2.5rem;
+      text-align: center;
+      margin: 2rem 0 1rem;
+    }
+
+    .final-cta h2 {
+      color: white;
+      border-left-color: #8db3a8;
+    }
+
+    .final-cta p {
+      color: #cfdfda;
+      margin: 0.5rem 0 1.5rem;
+    }
+
+    .btn-light {
+      background-color: #ffffff;
+      color: #1e6f5c;
+      padding: 0.7rem 1.8rem;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .btn-light:hover {
+      background-color: #eef2f6;
+      transform: translateY(-1px);
+    }
+
+    footer {
+      margin-top: 3rem;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      .hero {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <!-- Top navigation intentionally removed: this page is a subpage of jupenta.com -->
+      <div class="hero-content">
+        <h1>Technology Internships at Jupenta Technologies</h1>
+        <p>Work on production-grade projects, collaborate with senior engineers, and build a standout portfolio. From Data Science to VLSI — gain real experience at Jupenta Technologies.</p>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="https://wa.me/917397398610?text=Hello%20Jupenta%20Team%2C%20I%20would%20like%20to%20apply%20for%20an%20internship." target="_blank" rel="noopener">Apply via WhatsApp</a>
+          <a class="btn btn-secondary" href="mailto:jupentainternship@gmail.com">Send Email</a>
+        </div>
+        <div style="margin-top: 1.5rem; display: flex; gap: 1rem; opacity: 0.7;">
+          <span style="font-size: 1rem;">Python</span>
+          <span style="font-size: 1rem;">AI/ML</span>
+          <span style="font-size: 1rem;">Cloud</span>
+          <span style="font-size: 1rem;">Web3</span>
+        </div>
+      </div>
+      <div class="hero-logo">
+        <img src="../assets/images/FINAL,JUPENTA,LOGO.png" alt="Jupenta Technologies logo" loading="lazy" onerror="this.src='https://placehold.co/300x150?text=Jupenta+Tech'">
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <div class="stats-grid">
+    <div class="stat-item"><span class="stat-number">14+</span><span class="stat-label">Specializations</span></div>
+    <div class="stat-item"><span class="stat-number">100%</span><span class="stat-label">Project-Based</span></div>
+    <div class="stat-item"><span class="stat-number">Industry</span><span class="stat-label">Mentorship</span></div>
+    <div class="stat-item"><span class="stat-number">Certificate</span><span class="stat-label">Included</span></div>
+  </div>
+
+  <!-- Optimized Domain Sections for SEO -->
+  <section aria-labelledby="domains-heading">
+    <h2 id="domains-heading" style="margin-bottom:0.5rem;">Internship Tracks and Details</h2>
+    <p class="section-subtitle">Single-page internships optimized for multiple domains — overview, skills, career paths, and industry applications below.</p>
+
+    <!-- Dynamic Grid Container -->
+    <div id="domainsGrid" class="domains-grid"></div>
+
+  </section>
+
+  <!-- Why Jupenta -->
+  <h2>Why Students Choose Jupenta</h2>
+  <div class="features-grid">
+    <div class="feature-card"><div class="feature-title">Real Projects</div><div class="feature-text">Build product-grade applications used by actual users.</div></div>
+    <div class="feature-card"><div class="feature-title">Industry Exposure</div><div class="feature-text">Guidance from senior engineers and product teams.</div></div>
+    <div class="feature-card"><div class="feature-title">Mentor Guidance</div><div class="feature-text">Weekly one-on-one sessions and constructive code reviews.</div></div>
+    <div class="feature-card"><div class="feature-title">Portfolio Building</div><div class="feature-text">Ship projects that demonstrate real-world impact.</div></div>
+    <div class="feature-card"><div class="feature-title">Verified Certificate</div><div class="feature-text">Industry-recognized credential upon successful completion.</div></div>
+    <div class="feature-card"><div class="feature-title">Hybrid Flexibility</div><div class="feature-text">Online-first with optional in-person collaboration.</div></div>
+  </div>
+
+  <!-- Timeline -->
+  <div class="timeline-section">
+    <h2 style="border-left-color: #1e6f5c;">Internship Journey</h2>
+    <div class="timeline-steps">
+      <div class="step"><span class="step-number">1</span> Apply</div>
+      <div class="step"><span class="step-number">2</span> Connect</div>
+      <div class="step"><span class="step-number">3</span> Onboarding</div>
+      <div class="step"><span class="step-number">4</span> Build Projects</div>
+      <div class="step"><span class="step-number">5</span> Certificate</div>
+      <div class="step"><span class="step-number">6</span> Career Growth</div>
+    </div>
+  </div>
+
+  <!-- Accordion: Domain Details -->
+  <h2>Domain Details</h2>
+  <div class="accordion" id="accordionContainer"></div>
+
+  <!-- FAQ -->
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-grid">
+    <div class="faq-item"><span class="faq-question">Who can apply?</span><div class="faq-answer">Open to college students (B.E/B.Tech/BCA/MCA) or recent graduates with a passion for technology.</div></div>
+    <div class="faq-item"><span class="faq-question">Is it beginner friendly?</span><div class="faq-answer">Yes, we have structured tracks for beginners and advanced learners with dedicated support.</div></div>
+    <div class="faq-item"><span class="faq-question">Will I receive a certificate?</span><div class="faq-answer">Absolutely. You receive an industry-recognized certificate after successful completion.</div></div>
+    <div class="faq-item"><span class="faq-question">What projects will I work on?</span><div class="faq-answer">Mini-projects and a capstone project aligned with current industry standards.</div></div>
+    <div class="faq-item"><span class="faq-question">Is it online or offline?</span><div class="faq-answer">Hybrid model — remote-first with periodic in-person meetups (Bangalore/Hyderabad).</div></div>
+    <div class="faq-item"><span class="faq-question">Eligibility criteria?</span><div class="faq-answer">Enrolled in a degree program; some domains require basic programming knowledge.</div></div>
+  </div>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question","name": "Who can apply for the internship?","acceptedAnswer": {"@type": "Answer","text": "Open to college students (B.E/B.Tech/BCA/MCA) and recent graduates with interest in technology."}},
+      {"@type": "Question","name": "Do interns receive certificates?","acceptedAnswer": {"@type": "Answer","text": "Yes — interns receive a verified industry-recognized certificate upon successful completion."}},
+      {"@type": "Question","name": "Is prior experience required?","acceptedAnswer": {"@type": "Answer","text": "Some tracks are beginner-friendly; other tracks recommend basic programming knowledge."}},
+      {"@type": "Question","name": "Are projects included?","acceptedAnswer": {"@type": "Answer","text": "Yes — project-based learning with a capstone project aligned to industry use-cases."}},
+      {"@type": "Question","name": "Which internship domains are available?","acceptedAnswer": {"@type": "Answer","text": "Data Science, Data Analytics, Web & Full Stack, Python, AI/ML, Mobile, Cybersecurity, Generative AI, UI/UX, Embedded, IoT, VLSI and more — all on a single page."}},
+      {"@type": "Question","name": "How do I apply?","acceptedAnswer": {"@type": "Answer","text": "Apply via the WhatsApp link or send your application to jupentainternship@gmail.com."}}
+    ]
+  }
+  </script>
+
+  <!-- Final CTA -->
+  <div class="final-cta">
+    <h2>Ready to Build Your Future?</h2>
+    <p>Start your journey with Jupenta Technologies — limited seats available for the upcoming cohort.</p>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a class="btn-light" href="https://wa.me/917397398610?text=Hello%20Jupenta%20Team%2C%20I%20would%20like%20to%20apply%20for%20an%20internship." target="_blank">Apply on WhatsApp</a>
+      <a class="btn-light" href="mailto:jupentainternship@gmail.com">Email Your Application</a>
+    </div>
+  </div>
+
+  <footer>
+    <div style="display: flex; justify-content: center; gap: 1.5rem; align-items: center; flex-wrap: wrap; margin-bottom: 0.8rem;">
+      <img src="../assets/images/FINAL,JUPENTA,LOGO.png" alt="Jupenta Technologies logo" loading="lazy" style="width: 80px;" onerror="this.src='https://placehold.co/80x80?text=J'">
+      <div>WhatsApp: 73973 98610  |  Email: <a href="mailto:jupentainternship@gmail.com" style="color: #1e6f5c;">jupentainternship@gmail.com</a></div>
+    </div>
+    <div>© 2025 Jupenta Technologies — Empowering future engineers through hands-on industry training.</div>
+  </footer>
+</div>
+
+<script>
+  // Domain data
+  const domainsData = [
+    { code: "DS", name: "Data Science", desc: "End-to-end ML pipelines and model deployment.", skills: ["Python", "Pandas", "Scikit-learn"] },
+    { code: "DA", name: "Data Analytics", desc: "BI, reporting, and visualization mastery.", skills: ["SQL", "Tableau", "Power BI"] },
+    { code: "WD", name: "Web Development", desc: "Modern frontend and responsive design.", skills: ["HTML/CSS", "JavaScript", "React"] },
+    { code: "FS", name: "Full Stack", desc: "Build full-featured web applications.", skills: ["Node.js", "Express", "MongoDB"] },
+    { code: "PY", name: "Python Development", desc: "Scripting, automation and backend APIs.", skills: ["Python", "Flask", "FastAPI"] },
+    { code: "AI", name: "Artificial Intelligence", desc: "Deep learning and model integration.", skills: ["TensorFlow", "PyTorch", "NLP"] },
+    { code: "ML", name: "Machine Learning", desc: "Model engineering and evaluation.", skills: ["Scikit-learn", "XGBoost", "Stats"] },
+    { code: "MA", name: "Mobile App", desc: "Cross-platform & native mobile apps.", skills: ["Flutter", "React Native", "Kotlin"] },
+    { code: "CY", name: "Cybersecurity", desc: "Security testing and secure design.", skills: ["OWASP", "Kali", "Cryptography"] },
+    { code: "GA", name: "Generative AI", desc: "LLMs and creative AI applications.", skills: ["LangChain", "OpenAI API", "Vector DB"] },
+    { code: "UX", name: "UI/UX Design", desc: "Design systems and user research.", skills: ["Figma", "Prototyping", "Usability"] },
+    { code: "ES", name: "Embedded Systems", desc: "Firmware and hardware interfacing.", skills: ["C", "RTOS", "Microcontrollers"] },
+    { code: "IoT", name: "Internet of Things", desc: "Connected devices and cloud platforms.", skills: ["MQTT", "Arduino", "AWS IoT"] },
+    { code: "VL", name: "VLSI Design", desc: "RTL design and verification.", skills: ["Verilog", "FPGA", "Simulation"] }
+  ];
+
+  function renderDomains() {
+    const container = document.getElementById("domainsGrid");
+    if (!container) return;
+    container.innerHTML = domainsData.map(domain => `
+      <div class="domain-card" data-domain-name="${domain.name}">
+        <div class="domain-header">
+          <div class="domain-icon">${domain.code}</div>
+          <div class="domain-title">${domain.name}</div>
+        </div>
+        <div class="domain-desc">${domain.desc}</div>
+        <div class="skills-container">
+          ${domain.skills.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
+        </div>
+      </div>
+    `).join('');
+
+    // Add click handler to scroll to accordion
+    document.querySelectorAll('.domain-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const domainName = card.getAttribute('data-domain-name');
+        const targetAccordion = Array.from(document.querySelectorAll('.accordion-item')).find(item => 
+          item.querySelector('.accordion-header h3')?.innerText === domainName
+        );
+        if (targetAccordion) {
+          targetAccordion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (!targetAccordion.classList.contains('active')) {
+            const header = targetAccordion.querySelector('.accordion-header');
+            if (header) header.click();
+          }
+        } else {
+          // fallback: show brief message or just scroll to faq
+          const detailsSection = document.querySelector(".accordion");
+          if (detailsSection) detailsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  }
+
+  // Detailed accordion data
+  const detailedData = [
+    { name: "Data Science", overview: "Build predictive models and production-ready ML systems using real datasets.", skills: "Python, Pandas, Scikit-learn, Model Deployment, MLflow", careers: "Data Scientist, ML Engineer, Analytics Lead" },
+    { name: "Web Development", overview: "Create modern, performant websites with responsive design and API integration.", skills: "HTML5, CSS3, JavaScript, React, Tailwind", careers: "Frontend Engineer, UI Engineer" },
+    { name: "Full Stack", overview: "Master frontend and backend development; deploy complete web applications.", skills: "MERN stack, REST APIs, Database Design", careers: "Full Stack Developer, Software Engineer" },
+    { name: "Artificial Intelligence", overview: "Implement deep learning models, computer vision, and LLM fine-tuning.", skills: "TensorFlow, Keras, Transformers", careers: "AI Engineer, Research Assistant" },
+    { name: "Mobile App", overview: "Develop cross-platform mobile apps with Flutter and native integrations.", skills: "Flutter, Dart, Firebase", careers: "Mobile Developer, Flutter Engineer" },
+    { name: "Cybersecurity", overview: "Learn ethical hacking, vulnerability assessment, and secure coding.", skills: "Kali Linux, Burp Suite, OWASP Top 10", careers: "Security Analyst, Penetration Tester" },
+    { name: "Generative AI", overview: "Create AI systems using LLMs, prompt engineering, and RAG pipelines.", skills: "OpenAI API, LangChain, Vector Databases", careers: "Generative AI Specialist" },
+    { name: "UI/UX Design", overview: "Design user-centric interfaces, prototypes, and design systems.", skills: "Figma, Adobe XD, User Research", careers: "UI/UX Designer, Product Designer" },
+    { name: "Data Analytics", overview: "Extract insights, build dashboards, and tell data stories.", skills: "SQL, Tableau, Power BI, Excel", careers: "Data Analyst, BI Developer" },
+    { name: "Python Development", overview: "Automation, backend APIs, and scripting for real-world problems.", skills: "Python, Flask, Django, REST", careers: "Python Developer, Automation Engineer" },
+    { name: "Machine Learning", overview: "Master supervised and unsupervised learning, model evaluation.", skills: "Regression, Classification, Clustering", careers: "ML Engineer, Data Scientist" },
+    { name: "Embedded Systems", overview: "Firmware development for microcontrollers and real-time systems.", skills: "C, Embedded C, ARM, RTOS", careers: "Embedded Engineer" },
+    { name: "Internet of Things", overview: "Connect sensors, actuators to cloud platforms and build IoT solutions.", skills: "Arduino, ESP32, MQTT, AWS IoT", careers: "IoT Developer" },
+    { name: "VLSI Design", overview: "Digital design using Verilog, simulation and FPGA prototyping.", skills: "Verilog, Vivado, ModelSim", careers: "VLSI Engineer, RTL Designer" }
+  ];
+
+  function buildAccordion() {
+    const container = document.getElementById("accordionContainer");
+    if (!container) return;
+    container.innerHTML = detailedData.map(d => `
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h3 style="font-size: 1rem; font-weight: 600;">${d.name}</h3>
+          <span class="accordion-arrow">▼</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Overview:</strong> ${d.overview}</p>
+          <p><strong>Core Skills:</strong> ${d.skills}</p>
+          <p><strong>Career Paths:</strong> ${d.careers}</p>
+        </div>
+      </div>
+    `).join('');
+
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', function(e) {
+        const item = this.closest('.accordion-item');
+        if (item) {
+          item.classList.toggle('active');
+        }
+      });
+    });
+    // Open first accordion by default for better presentation
+    const firstItem = document.querySelector('.accordion-item');
+    if (firstItem) firstItem.classList.add('active');
+  }
+
+  // Fix missing images fallback
+  window.addEventListener('DOMContentLoaded', () => {
+    renderDomains();
+    buildAccordion();
+    const logos = document.querySelectorAll('img[src*="JUPENTA,LOGO"]');
+    logos.forEach(img => { // This ensures the logo fallback works even if the path is initially wrong
+      img.onerror = () => { img.src = '../assets/images/FINAL,JUPENTA,LOGO.png'; }; 
+    });
+  });
+</script>
+</body>
+</html>
