@@ -533,8 +533,89 @@
     <h2 id="domains-heading" style="margin-bottom:0.5rem;">Internship Tracks and Details</h2>
     <p class="section-subtitle">Single-page internships optimized for multiple domains — overview, skills, career paths, and industry applications below.</p>
 
-    <!-- Dynamic Grid Container -->
-    <div id="domainsGrid" class="domains-grid"></div>
+    <h2>Data Science Internship</h2>
+    <p><strong>Overview:</strong> Hands-on training in data collection, preprocessing, modeling, and deployment using real datasets.</p>
+    <p><strong>Skills Covered:</strong> Python, Pandas, NumPy, Scikit-learn, Model Evaluation, ML Deployment.</p>
+    <p><strong>Career Opportunities:</strong> Data Scientist, ML Engineer, Analytics Engineer.</p>
+    <p><strong>Industry Applications:</strong> Finance, Healthcare, Retail, and SaaS analytics.</p>
+
+    <h2>Data Analytics Internship</h2>
+    <p><strong>Overview:</strong> Learn data visualization, dashboarding and business reporting to translate data into decisions.</p>
+    <p><strong>Skills Covered:</strong> SQL, Excel, Tableau, Power BI, Data Storytelling.</p>
+    <p><strong>Career Opportunities:</strong> Data Analyst, BI Developer, Reporting Analyst.</p>
+    <p><strong>Industry Applications:</strong> Operations, Marketing Analytics, Supply Chain.</p>
+
+    <h2>Web Development Internship</h2>
+    <p><strong>Overview:</strong> Build responsive, accessible frontends and connect to APIs for modern web apps.</p>
+    <p><strong>Skills Covered:</strong> HTML, CSS, JavaScript, React, Responsive Design.</p>
+    <p><strong>Career Opportunities:</strong> Frontend Developer, UI Engineer.</p>
+    <p><strong>Industry Applications:</strong> SaaS, eCommerce, FinTech.</p>
+
+    <h2>Full Stack Development Internship</h2>
+    <p><strong>Overview:</strong> End-to-end web application development including backend APIs and database design.</p>
+    <p><strong>Skills Covered:</strong> Node.js, Express, Databases, REST APIs, Deployment.</p>
+    <p><strong>Career Opportunities:</strong> Full Stack Developer, Software Engineer.</p>
+    <p><strong>Industry Applications:</strong> Startups, Product companies, Digital agencies.</p>
+
+    <h2>Python Development Internship</h2>
+    <p><strong>Overview:</strong> Scripting, automation, backend development and building APIs with Python frameworks.</p>
+    <p><strong>Skills Covered:</strong> Python, Flask, FastAPI, Testing, Automation.</p>
+    <p><strong>Career Opportunities:</strong> Python Developer, Automation Engineer.</p>
+    <p><strong>Industry Applications:</strong> DevOps, Data Engineering, Web services.</p>
+
+    <h2>Artificial Intelligence Internship</h2>
+    <p><strong>Overview:</strong> Deep learning, NLP, and model integration for production use-cases.</p>
+    <p><strong>Skills Covered:</strong> TensorFlow, PyTorch, Transformers, Model Serving.</p>
+    <p><strong>Career Opportunities:</strong> AI Engineer, Research Assistant.</p>
+    <p><strong>Industry Applications:</strong> Vision, NLP, Conversational AI.</p>
+
+    <h2>Machine Learning Internship</h2>
+    <p><strong>Overview:</strong> Classical and modern machine learning techniques for supervised and unsupervised tasks.</p>
+    <p><strong>Skills Covered:</strong> Scikit-learn, XGBoost, Model Evaluation, Feature Engineering.</p>
+    <p><strong>Career Opportunities:</strong> ML Engineer, Data Scientist.</p>
+    <p><strong>Industry Applications:</strong> Predictive maintenance, Recommendation systems.</p>
+
+    <h2>Mobile App Development Internship</h2>
+    <p><strong>Overview:</strong> Build cross-platform and native mobile apps with modern toolchains.</p>
+    <p><strong>Skills Covered:</strong> Flutter, React Native, Kotlin, Android/iOS basics.</p>
+    <p><strong>Career Opportunities:</strong> Mobile Developer, App Engineer.</p>
+    <p><strong>Industry Applications:</strong> Consumer apps, Enterprise mobile solutions.</p>
+
+    <h2>Cybersecurity Internship</h2>
+    <p><strong>Overview:</strong> Security fundamentals, vulnerability assessment and secure coding practices.</p>
+    <p><strong>Skills Covered:</strong> OWASP, Penetration Testing, Secure Development.</p>
+    <p><strong>Career Opportunities:</strong> Security Analyst, Penetration Tester.</p>
+    <p><strong>Industry Applications:</strong> Web security, Application security, Enterprise risk.</p>
+
+    <h2>Generative AI Internship</h2>
+    <p><strong>Overview:</strong> Working with LLMs, prompt engineering and building generative systems.</p>
+    <p><strong>Skills Covered:</strong> OpenAI API, LangChain, Vector DBs, RAG pipelines.</p>
+    <p><strong>Career Opportunities:</strong> Generative AI Engineer, Prompt Engineer.</p>
+    <p><strong>Industry Applications:</strong> Content generation, Assistants, Automation.</p>
+
+    <h2>UI/UX Design Internship</h2>
+    <p><strong>Overview:</strong> User research, prototyping and design system creation for product teams.</p>
+    <p><strong>Skills Covered:</strong> Figma, Prototyping, Usability Testing, Design Systems.</p>
+    <p><strong>Career Opportunities:</strong> UI/UX Designer, Product Designer.</p>
+    <p><strong>Industry Applications:</strong> SaaS, Product design, Consumer apps.</p>
+
+    <h2>Embedded Systems Internship</h2>
+    <p><strong>Overview:</strong> Firmware development, hardware interfacing and real-time systems.</p>
+    <p><strong>Skills Covered:</strong> C, Embedded C, RTOS, Microcontrollers.</p>
+    <p><strong>Career Opportunities:</strong> Embedded Engineer, Firmware Developer.</p>
+    <p><strong>Industry Applications:</strong> IoT devices, Automotive, Consumer electronics.</p>
+
+    <h2>Internet of Things Internship</h2>
+    <p><strong>Overview:</strong> Build connected device solutions, sensor integration and cloud connectivity.</p>
+    <p><strong>Skills Covered:</strong> MQTT, Arduino/ESP32, Cloud IoT platforms.</p>
+    <p><strong>Career Opportunities:</strong> IoT Developer, Systems Engineer.</p>
+    <p><strong>Industry Applications:</strong> Smart homes, Industrial IoT, Wearables.</p>
+
+    <h2>VLSI Design Internship</h2>
+    <p><strong>Overview:</strong> RTL design, verification and FPGA prototyping for silicon projects.</p>
+    <p><strong>Skills Covered:</strong> Verilog, FPGA workflows, Simulation tools.</p>
+    <p><strong>Career Opportunities:</strong> VLSI Engineer, RTL Designer.</p>
+    <p><strong>Industry Applications:</strong> Semiconductor design, ASIC/FPGA systems.</p>
 
   </section>
 
@@ -720,9 +801,9 @@
   window.addEventListener('DOMContentLoaded', () => {
     renderDomains();
     buildAccordion();
-    const logos = document.querySelectorAll('img[src*="JUPENTA,LOGO"]');
-    logos.forEach(img => { // This ensures the logo fallback works even if the path is initially wrong
-      img.onerror = () => { img.src = '../assets/images/FINAL,JUPENTA,LOGO.png'; }; 
+    const logos = document.querySelectorAll('img[src*="FINAL,JUPENTA,LOGO"]');
+    logos.forEach(img => {
+      img.onerror = () => { img.src = 'https://placehold.co/300x150?text=Jupenta+Tech'; };
     });
   });
 </script>
